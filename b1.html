@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="counter"></p>
+
+<script>
+
+    let count = 1;
+    let limit = 100;
+
+    function print() {
+        if (count < limit) {
+            document.getElementById('counter').innerText = count;
+            count++;
+            setTimeout(print, 100);
+        } else {
+            alert('Đã hoàn thành');
+        }
+    }
+
+    print();
+
+</script>
+
+</body>
+</html>

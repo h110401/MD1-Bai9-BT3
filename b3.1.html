@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<script>
+
+    function print() {
+        let f1 = 1;
+        let f2 = 1;
+
+        let result = 0;
+
+        for (let i = 0; i < 18; i++) {
+            result = f1 + f2;
+            document.write(result, ' ');
+            f1 = f2;
+            f2 = result;
+        }
+    }
+
+    print();
+
+</script>
+
+</body>
+</html>
